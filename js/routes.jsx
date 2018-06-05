@@ -6,7 +6,7 @@ import Form from './components/Form.jsx';
 const route = {
   path: '/',
   component: Form,
-  indexRoute: { onEnter: (nextState, replace) => replace('/first-section/first-page') },
+  indexRoute: { onEnter: (nextState, replace) => replace('/introduction') },
   childRoutes: createRoutes(formConfig),
 };
 

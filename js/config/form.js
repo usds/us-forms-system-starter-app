@@ -1,3 +1,4 @@
+import Introduction from '../components/Introduction.jsx';
 import fullName from '../definitions/fullName';
 
 const formConfig = {
@@ -8,7 +9,7 @@ const formConfig = {
   trackingPrefix: 'form-',
   transformForSubmit: '',
   submitUrl: '',
-  introduction: '',
+  introduction: Introduction,
   confirmation: '',
   defaultDefinitions: {
     fullName

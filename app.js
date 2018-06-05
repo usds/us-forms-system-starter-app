@@ -12,11 +12,8 @@ import Form from './js/components/Form.jsx';
 const store = createStore(combineReducers(reducer));
 
 const browserHistory = useRouterHistory(createHistory)({
-  basename: '/'
+  basename: ''
 });
-
-console.log(browserHistory);
-console.log(route);
 
 ReactDOM.render(
 	(

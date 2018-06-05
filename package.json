@@ -37,6 +37,7 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "@department-of-veterans-affairs/formation": "^0.8.0",
     "us-forms-system": "git+https://github.com/usds/us-forms-system.git#5b956b664c3ce012e86e7898711228662289ed49"
   }
 }
