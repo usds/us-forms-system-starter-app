@@ -1,6 +1,8 @@
 import Introduction from '../components/Introduction.jsx';
 import fullName from '../definitions/fullName';
 
+import fullNameUI from 'us-forms-system/lib/js/definitions/fullName';
+
 const formConfig = {
   title: 'Form',
   subTitle: 'Test',
@@ -21,7 +23,9 @@ const formConfig = {
         firstPage: {
           path: 'first-section/first-page',
           title: 'First Page',
-          uiSchema: {},
+          uiSchema: {
+            fullName: fullNameUI
+          },
           schema: {
             type: 'object',
             properties: {

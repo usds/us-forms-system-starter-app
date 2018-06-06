@@ -17,7 +17,33 @@ module.exports = {
     rules: [
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader']},
       {test: /\.jsx$/, exclude: /node_modules/, loaders: ['babel-loader']},
-      {test: /(\.css)$/, loaders: ['style-loader', 'css-loader']}
+      {test: /\.css$/, loaders: ['style-loader', 'css-loader']},
+      {test: /\.svg/, loaders: ['svg-url-loader']},
+      {
+        test: /\.(jpe?g|png|gif)$/i,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000
+          }
+        }
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            mimetype: 'application/font-woff'
+          }
+        }
+      },
+      {
+        test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: {
+          loader: 'file-loader'
+        }
+      },
     ]
   }
 }
