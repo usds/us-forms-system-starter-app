@@ -1,5 +1,5 @@
 {
-  "name": "test-form",
+  "name": "us-forms-system-starter-app",
   "version": "1.0.0",
   "description": "Test US Forms System",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akainic/test-form.git"
+    "url": "git+https://github.com/usds/us-forms-system-starter-app.git"
   },
   "author": "",
   "license": "ISC",
@@ -40,6 +40,6 @@
   },
   "dependencies": {
     "@department-of-veterans-affairs/formation": "^0.8.0",
-    "us-forms-system": "git+https://github.com/usds/us-forms-system.git#30a3d63fbbcd9e5faad98a43bd7c62c5f4b4809b"
+    "us-forms-system": "git+https://github.com/usds/us-forms-system.git#534dd8726e79e7cc3ff37c5a9bc108ef96d146db"
   }
 }
