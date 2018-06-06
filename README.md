@@ -8,5 +8,6 @@ If you want to build a form using the U.S. Forms System, this repo provides the 
 
 ## How to use it
 1. Fork repo to create your own form app
-2. Start editing the config to build your form: `/js/config/form.js`
-3. Run app locally: `npm start`
+2. Install dependencies: `npm install`
+3. Start editing the config to build your form: `/js/config/form.js`
+4. Run app locally: `npm start`
