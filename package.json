@@ -40,6 +40,6 @@
   },
   "dependencies": {
     "@department-of-veterans-affairs/formation": "^0.8.0",
-    "us-forms-system": "git+https://github.com/usds/us-forms-system.git#534dd8726e79e7cc3ff37c5a9bc108ef96d146db"
+    "us-forms-system": "git+https://github.com/usds/us-forms-system.git#e8014fb3e5d36f411410dfd45bce97b45c762fa0"
   }
 }
