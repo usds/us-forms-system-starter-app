@@ -1,6 +1,5 @@
 import React from 'react';
-import ProgressButton from '@department-of-veterans-affairs/formation/ProgressButton';
-
+import ProgressButton from 'us-forms-system/lib/js/components/ProgressButton';
 import FormTitle from 'us-forms-system/lib/js/components/FormTitle';
 
 class Introduction extends React.Component {
