@@ -31,6 +31,6 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
-    "us-forms-system": "git+https://github.com/usds/us-forms-system.git#29159f35bb316c32b94f844555e1f6d9008f4e77"
+    "us-forms-system": "git+https://github.com/usds/us-forms-system.git#ffd15c43556ab4108c1481b8d6163c8a1589a1ea"
   }
 }
