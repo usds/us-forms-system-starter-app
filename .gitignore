@@ -3,6 +3,13 @@ node_modules/
 .babelcache/
 build/
 
+# Build artifacts
+public/css
+public/fonts
+public/images
+public/js
+public/stats
+
 # Files to ignore
 ._*
 .cache
