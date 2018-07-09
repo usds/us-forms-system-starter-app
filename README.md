@@ -1,13 +1,10 @@
-# us-forms-system-starter-app
-Starter app using U.S. Forms System
+# US Forms System Starter App
+Starter app using [US Forms System](https://github.com/usds/us-forms-system/).
 
 ***THIS IS A WORK IN PROGRESS.***
 
-## What this project is for
-If you want to build a form using the U.S. Forms System, this repo provides the basic files and configuration needed to get started.
+## About this project
+This repository provides the basic files and configuration needed to get started building a form using the US Forms System.
 
-## How to use it
-1. Fork repo to create your own form app
-2. Install dependencies: `npm install`
-3. Start editing the config to build your form: `/js/config/form.js`
-4. Run app locally: `npm start`
+## Using the US Forms System Starter App
+For information about setting up and using the US Forms System Starter App, see the *[US Forms System Documentation](https://github.com/usds/us-forms-system/tree/master/docs#us-forms-system-documentation)*.
