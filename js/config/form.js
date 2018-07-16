@@ -11,7 +11,7 @@ const formConfig = {
   trackingPrefix: 'form-',
   transformForSubmit: '',
   submitUrl: '',
-  //introduction: Introduction,
+  introduction: Introduction,
   confirmation: '',
   defaultDefinitions: {
     fullName
