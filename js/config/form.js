@@ -1,7 +1,4 @@
 import Introduction from '../components/Introduction.jsx';
-import fullName from '../definitions/fullName';
-
-import fullNameUI from 'us-forms-system/lib/js/definitions/fullName';
 
 const formConfig = {
   title: 'Form',
@@ -13,24 +10,18 @@ const formConfig = {
   submitUrl: '',
   introduction: Introduction,
   confirmation: '',
-  defaultDefinitions: {
-    fullName
-  },
+  defaultDefinitions: {},
   chapters: {
-    firstSection: {
-      title: 'First Section',
+    firstChapter: {
+      title: 'First Chapter',
       pages: {
         firstPage: {
           path: 'first-section/first-page',
           title: 'First Page',
-          uiSchema: {
-            fullName: fullNameUI
-          },
+          uiSchema: {},
           schema: {
             type: 'object',
-            properties: {
-              fullName
-            }
+            properties: {}
           }
         },
         secondPage: {
@@ -44,8 +35,8 @@ const formConfig = {
         }
       }
     },
-    secondSection: {
-      title: 'Second Section',
+    secondChapter: {
+      title: 'Second Chapter',
       pages: {
 
       }
