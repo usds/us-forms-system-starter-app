@@ -16,7 +16,7 @@ const formConfig = {
       title: 'First Chapter',
       pages: {
         firstPage: {
-          path: 'first-section/first-page',
+          path: 'first-chapter/first-page',
           title: 'First Page',
           uiSchema: {},
           schema: {
@@ -25,7 +25,7 @@ const formConfig = {
           }
         },
         secondPage: {
-          path: 'first-section/second-page',
+          path: 'first-chapter/second-page',
           title: 'Second Page',
           uiSchema: {},
           schema: {
