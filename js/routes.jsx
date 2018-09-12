@@ -1,3 +1,4 @@
+import React from 'react';
 // import { createRoutes } from 'us-forms-system/lib/js/helpers';
 import FormPage from 'us-forms-system/lib/js/containers/FormPage';
 import ReviewPage from 'us-forms-system/lib/js/review/ReviewPage';
@@ -7,6 +8,11 @@ import formConfig from './config/form';
 import Form from './components/Form.jsx';
 
 // const routes = createRoutes(formConfig);
+
+function goToRoute(path) {
+	console.log(path);
+	return path;
+}
 
 /*
  * Create the routes based on a form config. This goes through each chapter in a form
@@ -23,7 +29,8 @@ function createRoutes(formConfig) {
         component: page.component || FormPage,
         pageConfig: page,
         pageList,
-        urlPrefix: formConfig.urlPrefix
+        urlPrefix: formConfig.urlPrefix,
+        goToRoute,
       };
     });
   if (formConfig.introduction) {
