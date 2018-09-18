@@ -11,7 +11,7 @@ class Introduction extends React.Component {
   startForm() {
     const firstPage = this.props.route.pageList[1].path;
     this.props.router.push(firstPage);
-  }  
+  }
 
   render() {
     return (
