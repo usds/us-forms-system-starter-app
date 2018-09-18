@@ -6,13 +6,9 @@ import { createFormPageList, createPageList } from 'us-forms-system/lib/js/helpe
 
 import formConfig from './config/form';
 import Form from './components/Form.jsx';
+import PageWithNavigation from './components/PageWithNavigation';
 
 // const routes = createRoutes(formConfig);
-
-function goToRoute(path) {
-	console.log(path);
-	return path;
-}
 
 /*
  * Create the routes based on a form config. This goes through each chapter in a form
@@ -26,11 +22,10 @@ function createRoutes(formConfig) {
     .map(page => {
       return {
         path: page.path,
-        component: page.component || FormPage,
+        component: page.component || PageWithNavigation,
         pageConfig: page,
         pageList,
-        urlPrefix: formConfig.urlPrefix,
-        goToRoute,
+        urlPrefix: formConfig.urlPrefix
       };
     });
   if (formConfig.introduction) {
