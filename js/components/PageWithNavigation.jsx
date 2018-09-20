@@ -107,25 +107,25 @@ class PageWithNavigation extends React.Component {
           location={this.props.location}
           onSubmit={this.onSubmit}
           onPageChange={this.getUpdatedFormData}>
-          <div className="row form-progress-buttons schemaform-buttons">
-            <div className="small-6 medium-5 columns">
-              {!isFirstRoutePage &&
-                <ProgressButton
-                  onButtonClick={this.goBack}
-                  buttonText="Back"
-                  buttonClass="usa-button-secondary"
-                  beforeText="«"/> }
-            </div>
-            <div className="small-6 medium-5 end columns">
+        </FormPage>
+        <div className="row form-progress-buttons schemaform-buttons">
+          <div className="small-6 medium-5 columns">
+            {!isFirstRoutePage &&
               <ProgressButton
-                submitButton
-                buttonText="Continue"
-                buttonClass="usa-button-primary"
-                afterText="»"/>
-            </div>
+                onButtonClick={this.goBack}
+                buttonText="Back"
+                buttonClass="usa-button-secondary"
+                beforeText="«"/> }
+          </div>
+          <div className="small-6 medium-5 end columns">
+            <ProgressButton
+              submitButton
+              buttonText="Continue"
+              buttonClass="usa-button-primary"
+              afterText="»"/>
           </div>
           {contentAfterButtons}
-        </FormPage>
+        </div>
       </div>
     );
   }
