@@ -32,7 +32,7 @@
      'react/jsx-closing-bracket-location': [2, 'after-props'],
     'react/jsx-equals-spacing': 2,
     'react/jsx-key': 2,
-    'react/jsx-no-bind': [0, {'ignoreRefs': true}],  // TODO: Enable after fixing.
+    'react/jsx-no-bind': [2],
     'react/jsx-pascal-case': 2,
     'react/sort-prop-types': [0, {'callbacksLast': true, 'requiredFirst': true}],  // TODO(awong): Too hard to turn on.
     'react/jsx-sort-props': [0, {'callbacksLast': true, 'shorthandFirst': true}],  // TODO(awong): Too hard to turn on.
@@ -40,7 +40,7 @@
     'react/no-danger': 2,
     'react/no-deprecated': 2,
     'react/no-direct-mutation-state': 2,
-    'react/no-string-refs': 0,       // TODO(awong): Enable.
+    'react/no-string-refs': 2,
     'react/prop-types': 0,           // TODO(awong): Enable.
     'react/jsx-tag-spacing': [2, { 'beforeSelfClosing': 'never' }],
     'import/no-extraneous-dependencies': 0,
@@ -59,8 +59,7 @@
         message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
       }],
     'no-plusplus': 0,
-    'react/jsx-indent-props': 0,
-     // TODO: evaluate and potentially turn these rules back on
+    'react/jsx-indent-props': 2,
     'import/extensions': 0,
     'react/jsx-filename-extension': 0,
     'import/first': 0,
@@ -89,7 +88,7 @@
     'jsx-a11y/href-no-hash': 0,
   },
   'overrides': [{
-    'files': ["**/*.spec.jsx", "**/*.spec.js", "src/platform/testing/**/*.js", "src/platform/testing/**/*.jsx"],
+    'files': ["**/*.spec.jsx", "**/*.spec.js"],
     'rules': {
       'react/no-find-dom-node': 0,
       'no-unused-expressions': 0
