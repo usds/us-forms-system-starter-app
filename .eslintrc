@@ -34,14 +34,14 @@
     'react/jsx-key': 2,
     'react/jsx-no-bind': [2],
     'react/jsx-pascal-case': 2,
-    'react/sort-prop-types': [0, {'callbacksLast': true, 'requiredFirst': true}],  // TODO(awong): Too hard to turn on.
-    'react/jsx-sort-props': [0, {'callbacksLast': true, 'shorthandFirst': true}],  // TODO(awong): Too hard to turn on.
+    'react/sort-prop-types': [0, {'callbacksLast': true, 'requiredFirst': true}],  // Too strict, we don't want to enable this
+    'react/jsx-sort-props': [0, {'callbacksLast': true, 'shorthandFirst': true}],  // Too strict, we don't want to enable this
     'react/jsx-no-duplicate-props': 2,
     'react/no-danger': 2,
     'react/no-deprecated': 2,
     'react/no-direct-mutation-state': 2,
     'react/no-string-refs': 2,
-    'react/prop-types': 0,           // TODO(awong): Enable.
+    'react/prop-types': 2,
     'react/jsx-tag-spacing': [2, { 'beforeSelfClosing': 'never' }],
     'import/no-extraneous-dependencies': 0,
      // this is the airbnb default, minus for..of

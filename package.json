@@ -47,6 +47,7 @@
     "webpack-merge": "^4.1.3"
   },
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "us-forms-system": "^1.1.0"

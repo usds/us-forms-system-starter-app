@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import ProgressButton from 'us-forms-system/lib/js/components/ProgressButton';
 import FormTitle from 'us-forms-system/lib/js/components/FormTitle';
 
@@ -27,5 +29,10 @@ class Introduction extends React.Component {
     );
   }
 }
+
+Introduction.propTypes = {
+  route: PropTypes.object,
+  router: PropTypes.object
+};
 
 export default Introduction;
