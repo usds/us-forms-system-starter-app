@@ -18,10 +18,16 @@ const formConfig = {
         firstPage: {
           path: 'first-chapter/first-page',
           title: 'First Page',
-          uiSchema: {},
+          uiSchema: {
+
+          },
           schema: {
             type: 'object',
-            properties: {}
+            properties: {
+              name: {
+                type: 'string'
+              }
+            }
           }
         },
         secondPage: {
@@ -30,7 +36,11 @@ const formConfig = {
           uiSchema: {},
           schema: {
             type: 'object',
-            properties: {}
+            properties: {
+              favoriteAnimal: {
+                type: 'string'
+              }
+            }
           }
         }
       }

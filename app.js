@@ -18,11 +18,11 @@ const browserHistory = useRouterHistory(createHistory)({
 });
 
 ReactDOM.render(
-	(
-	  <Provider store={store}>
+  (
+    <Provider store={store}>
       <Router history={browserHistory}>
-      	{route}
+        {route}
       </Router>
     </Provider>
-	), document.getElementById('root')
+  ), document.getElementById('root')
 );
