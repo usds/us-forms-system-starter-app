@@ -9,7 +9,7 @@ const route = {
   path: '/',
   component: Form,
   indexRoute: {
-    onEnter: (nextState, replace) => replace(formConfig.urlPrefix+routes[0].path)
+    onEnter: (nextState, replace) => replace(formConfig.urlPrefix + routes[0].path)
   },
   childRoutes: routes,
 };

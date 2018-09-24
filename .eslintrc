@@ -1,0 +1,103 @@
+{
+  // All rules should be disabled or they should produce errors. No warnings.
+  "extends": [
+    'airbnb',
+    "plugin:jsx-a11y/recommended"
+  ],
+  'parser': 'babel-eslint',
+  'env': {
+    'browser': true,
+    'commonjs': true,
+    'es6': true,
+    'mocha': true
+  },
+  'globals': {
+    '__BUILDTYPE__': true
+  },
+  "plugins": [
+    "jsx-a11y"
+  ],
+  'rules': {
+    // Override airbnb style.
+    'arrow-body-style': 0,  // Leave bracing to code reviewer discretion.
+    'camelcase': [2, {'properties': 'always'}],
+    'comma-dangle': 0,  // Dangling commas are wonderful. It's JSON that's stupid.
+    'func-names': 2,
+    'no-console': 2,
+    'no-negated-condition': 0,  // Sometimes negated conditions are easier to understand.
+    'no-unused-vars': [2, {'args': 'after-used', 'argsIgnorePattern': '^_', 'vars': 'local'}],
+    'prefer-rest-params': 2,
+    'quote-props': [2, 'as-needed', { 'keywords': true }],
+    'space-unary-ops': 2,
+    'max-len': [2, 250],  // TODO: make smaller
+    'arrow-parens': 0, // We don't have an agreed upon pattern here
+    'no-plusplus': 0,
+    'no-underscore-dangle': 0,
+    'import/no-extraneous-dependencies': 0,
+
+    // Disabled rules with rationale.
+    'react/no-multi-comp': 0,      // Leave organization to code reviewer discretion.
+    'react/prefer-stateless-function': 0, // Leave statelessness to code reviewer discretion.
+    'react/jsx-closing-bracket-location': [2, 'after-props'],
+    'react/jsx-equals-spacing': 2,
+    'react/jsx-key': 2,
+    'react/jsx-pascal-case': 2,
+    'react/sort-prop-types': [0, {'callbacksLast': true, 'requiredFirst': true}],  // Too strict, we don't want to enable this
+    'react/jsx-sort-props': [0, {'callbacksLast': true, 'shorthandFirst': true}],  // Too strict, we don't want to enable this
+    'react/jsx-no-duplicate-props': 2,
+    'react/no-danger': 2,
+    'react/no-deprecated': 2,
+    'react/no-direct-mutation-state': 2,
+    'react/jsx-tag-spacing': [2, { 'beforeSelfClosing': 'never' }],
+
+    // this is the airbnb default, minus for..of
+    'no-restricted-syntax': [2, 'error',
+      {
+        selector: 'ForInStatement',
+        message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+      },
+      {
+        selector: 'LabeledStatement',
+        message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+      },
+      {
+        selector: 'WithStatement',
+        message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+      }],
+
+    // TODO: evaluate and potentially turn these rules back on
+    'jsx-a11y/no-onchange': 0, // possibly bad advice? https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/398
+    'import/extensions': 0,
+    'react/jsx-filename-extension': 0,
+    'import/first': 0,
+    'react/require-default-props': 0,
+    'block-spacing': 0,
+    'class-methods-use-this': 0,
+    'import/no-named-as-default': 0,
+    'react/forbid-prop-types': 0,
+    'react/self-closing-comp': 0,
+    'no-mixed-operators': 0,
+    'react/jsx-first-prop-new-line': 0,
+    'react/jsx-max-props-per-line': 0,
+    'react/no-array-index-key': 0,
+    'react/no-unused-prop-types': 0,
+    'no-multi-spaces': 0,
+    'no-undef-init': 0,
+    'padded-blocks': 0,
+    'import/prefer-default-export': 0,
+    'global-require': 0,
+    'no-lonely-if': 0,
+    'lines-around-directive': 0,
+  },
+  'overrides': [{
+    'files': ["**/*.spec.jsx", "**/*.spec.js"],
+    'rules': {
+      'react/no-find-dom-node': 0,
+      'no-unused-expressions': 0
+    }
+  }],
+  'parserOptions': {
+    'ecmaVersion': 6,
+    'sourceType': 'module'
+  }
+}

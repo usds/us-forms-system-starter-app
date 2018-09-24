@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import ProgressButton from 'us-forms-system/lib/js/components/ProgressButton';
 import FormTitle from 'us-forms-system/lib/js/components/FormTitle';
 
@@ -11,7 +13,7 @@ class Introduction extends React.Component {
   startForm() {
     const firstPage = this.props.route.pageList[1].path;
     this.props.router.push(firstPage);
-  }  
+  }
 
   render() {
     return (
@@ -27,5 +29,10 @@ class Introduction extends React.Component {
     );
   }
 }
+
+Introduction.propTypes = {
+  route: PropTypes.object,
+  router: PropTypes.object
+};
 
 export default Introduction;

@@ -1,9 +1,8 @@
-const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
   resolve: {
-    modules: [ 'node_modules' ],
+    modules: ['node_modules'],
     extensions: ['.js', '.jsx']
   },
   context: process.cwd(),
