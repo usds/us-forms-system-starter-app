@@ -36,7 +36,7 @@ const formConfig = {
       }
     },
     secondChapter: {
-      title: 'Second Chapter',
+      title: 'Second Test Chapter',
       pages: {
 
       }
