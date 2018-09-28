@@ -13,7 +13,7 @@ const formConfig = {
   defaultDefinitions: {},
   chapters: {
     firstChapter: {
-      title: 'First Chapter',
+      title: 'First Test Chapter',
       pages: {
         firstPage: {
           path: 'first-chapter/first-page',
