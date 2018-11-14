@@ -18,9 +18,8 @@ export default function Form({ location }) {
 
   return (
  		<div>
- 			
 	    <FormApp formConfig={formConfig} currentLocation={location}>
-
+	    	
 	    </FormApp>
     </div>
   );

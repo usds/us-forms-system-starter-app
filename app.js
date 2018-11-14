@@ -23,14 +23,20 @@ ReactDOM.render(
   (
     <Provider store={store}>
       <BrowserRouter>
-      	<div>
-      		<Route exact path="" component={Form}/>
-
-        </div>
+  			<Route component={Form}/>
       </BrowserRouter>
     </Provider>
   ), document.getElementById('root')
 );
+
+      // <BrowserRouter>
+      // 	<div>
+      // 		<Route exact path="/" component={Form}/>
+
+      //   </div>
+      // </BrowserRouter>
+
+      // <Router history={browserHistory} component={Form}/>
 
         	// <Route exact path="" component={Form}/>
         	// <Route exact path="" render={() => <Redirect to="/introduction"/>} />
