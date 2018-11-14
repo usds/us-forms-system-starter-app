@@ -9,7 +9,7 @@ const formConfig = {
   transformForSubmit: '',
   submitUrl: '',
   introduction: Introduction,
-  confirmation: '',
+  confirmation: Introduction,
   defaultDefinitions: {},
   chapters: {
     firstChapter: {

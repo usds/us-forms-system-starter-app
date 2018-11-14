@@ -1,17 +1,27 @@
-import { createRoutes } from 'us-forms-system/lib/js/helpers';
+import { createRoutes, createFormPageList, createPageList } from 'us-forms-system/lib/js/helpers';
+
+import { Route } from 'react-router-dom';
 
 import formConfig from './config/form';
 import Form from './components/Form.jsx';
 
 const routes = createRoutes(formConfig);
 
-const route = {
-  path: '/',
-  component: Form,
-  indexRoute: {
-    onEnter: (nextState, replace) => replace(formConfig.urlPrefix + routes[0].path)
-  },
-  childRoutes: routes,
-};
+const formPages = createFormPageList(formConfig);
+export const pageList = createPageList(formConfig, formPages);
 
-export default route;
+// const route = {
+//   path: '/',
+//   component: Form,
+//   indexRoute: {
+//     onEnter: (nextState, replace) => replace(formConfig.urlPrefix + routes[0].path)
+//   },
+//   childRoutes: routes,
+// };
+
+// const route = [
+// 	<Route path={} component={}/>,
+// 	<Route path={} component={}/>
+// ];
+
+// export default route;
