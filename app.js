@@ -23,7 +23,7 @@ ReactDOM.render(
   (
     <Provider store={store}>
       <BrowserRouter>
-  			<Route component={Form}/>
+  			<Route path="/" component={Form}/>
       </BrowserRouter>
     </Provider>
   ), document.getElementById('root')

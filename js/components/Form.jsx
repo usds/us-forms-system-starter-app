@@ -11,6 +11,10 @@ import Introduction from './Introduction';
 import { pageList } from '../routes';
 
 const routes = createRoutes(formConfig);
+// const routes = [{
+// 	path: '/',
+//   component: Introduction,
+// }];
 
 export default function Form({ location }) {
   console.log(routes);
@@ -20,6 +24,22 @@ export default function Form({ location }) {
  		<div>
 	    <FormApp formConfig={formConfig} currentLocation={location}>
 	    	
+	    	
+	     	{routes.map((route, i) => {
+	     		console.log(i, route.component);
+	     		if (!route.component) {
+	     			return (
+	     				<Introduction key={i}/>
+	     			)
+	     		}
+
+	     		return (
+		     		<Route key={i} exact path={route.path} render={props => 			   
+		     			<route.component {...props}/>
+		     		}/>
+     			);
+     		})}
+
 	    </FormApp>
     </div>
   );
