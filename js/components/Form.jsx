@@ -24,21 +24,19 @@ export default function Form({ location }) {
  		<div>
 	    <FormApp formConfig={formConfig} currentLocation={location}>
 	    	
+	    	<Switch>
+			    <Route exact path="/first-chapter/first-page" render={props => 
+			    	<FormPage pageList={pageList} {...props}/>
+			    }/>
+	 			  <Route exact path="/first-chapter/second-page" render={props => 
+			    	<FormPage pageList={pageList} {...props}/>
+			    }/>
+	 			  <Route exact path="/introduction" render={props => 
+	 			  	<Introduction pageList={pageList} {...props}/>
+	 			  }/>
+ 			  </Switch>
 	    	
-	     	{routes.map((route, i) => {
-	     		console.log(i, route.component);
-	     		if (!route.component) {
-	     			return (
-	     				<Introduction key={i}/>
-	     			)
-	     		}
-
-	     		return (
-		     		<Route key={i} exact path={route.path} render={props => 			   
-		     			<route.component {...props}/>
-		     		}/>
-     			);
-     		})}
+	     	
 
 	    </FormApp>
     </div>
@@ -49,6 +47,21 @@ Form.propTypes = {
   children: PropTypes.object,
   location: PropTypes.object
 };
+
+// {routes.map((route, i) => {
+// 	     		console.log(i, route.component);
+// 	     		if (!route.component) {
+// 	     			return (
+// 	     				<Introduction key={i}/>
+// 	     			)
+// 	     		}
+
+// 	     		return (
+// 		     		<Route key={i} exact path={route.path} render={props => 			   
+// 		     			<route.component {...props}/>
+// 		     		}/>
+//      			);
+//      		})}
 
 // <Route exact path="" render={() => <Redirect to="/introduction" component={Introduction}/>} />
 
