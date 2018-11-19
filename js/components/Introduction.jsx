@@ -11,7 +11,7 @@ class Introduction extends React.Component {
   }
 
   startForm() {
-    const firstPage = this.props.pageList[1].path;
+    const firstPage = this.props.route.pageList[1].path;
     this.props.history.push(firstPage);
   }
 
@@ -31,6 +31,7 @@ class Introduction extends React.Component {
 }
 
 Introduction.propTypes = {
+  history: PropTypes.object,
   route: PropTypes.object,
   router: PropTypes.object
 };

@@ -33,8 +33,11 @@
     "eslint-plugin-react": "^7.2.1",
     "eslint-plugin-scanjs-rules": "^0.1.4",
     "eslint-stats": "^1.0.0",
+    "history": "^4.7.2",
     "mocha": "^5.2.0",
+    "react-redux": "^5.1.1",
     "react-test-renderer": "^15.5.4",
+    "redux": "^4.0.1",
     "skin-deep": "^1.0.0",
     "style-loader": "^0.21.0",
     "svg-url-loader": "^2.3.2",
@@ -50,7 +53,7 @@
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-router-dom": "^4.3.1",
-    "us-forms-system": "https://github.com/usds/us-forms-system.git#16dbcb2f1613a434e2bab760b99d57c9fbeae278",
+    "us-forms-system": "file:../us-forms-system",
     "uswds": "^1.6.3"
   }
 }
