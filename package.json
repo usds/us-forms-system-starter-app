@@ -50,6 +50,7 @@
     "prop-types": "^15.6.2",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
+    "redux-thunk": "^2.3.0",
     "us-forms-system": "^1.1.0",
     "uswds": "^1.6.3"
   }
